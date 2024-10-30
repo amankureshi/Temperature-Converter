@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=200&id=1srWbGKqAlWW&format=png&color=FAB005"
+        type="image/x-icon">
+    <script src="https://kit.fontawesome.com/270c579228.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="temperature-converter">
+            <div class="mobile">
+                <p>7.30 AM</p>
+                <div>
+                    <!-- mobile-icon -->
+                    <i class="fa-solid fa-signal"></i>
+                    <i class="fa-solid fa-wifi"></i>
+                    <i class="fa-solid fa-battery-full"></i>
+                </div>
+            </div>
+            <h1 class="title">Temperature Converter</h1>
+
+            <!-- showing result  -->
+            <div class="result">
+                <span class="result-heading">Result(Celsius)</span>
+                <div class="celsius-value" id="celsius">1</div>
+            </div>
+
+            <!-- input-field -->
+            <div class="degree-type">
+                <!-- for degree -->
+                <div class="degree-field">
+                    <label for="degree">Degrees</label>
+                    <input type="number" name="degree" id="degree">
+                </div>
+
+                <!-- for option selection -->
+                <div class="temp-field">
+                    <label for="temp-type">Type</label>
+                    <select name="temeprature" id="temp-type" autocomplete="on">
+                        <option value="fahrenheit" id="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin" id="kelvin">kelvin</option>
+                    </select>
+                </div>
+            </div>
+            <button id="convert-btn">Convert</button>
+        </div>
+    </div>
+</body>
+
+</html>
